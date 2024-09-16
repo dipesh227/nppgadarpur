@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import Topbar from "@/components/Topbar";
+import Midbar from "@/components/Midbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,6 +39,7 @@ export default function RootLayout({
           disableTransitionOnChange
         > */}
         <Topbar />
+        <Midbar />
         <Navbar />
         {children}
       </body>
