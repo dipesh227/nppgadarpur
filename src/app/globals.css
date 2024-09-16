@@ -66,4 +66,11 @@
   body {
     @apply bg-background text-foreground;
   }
+  .container {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .justify {
+    text-align: justify;
+  }
 }

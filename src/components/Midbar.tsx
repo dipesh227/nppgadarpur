@@ -14,7 +14,7 @@ import {
 
 export default function Midbar() {
     return (
-        <NavigationMenu className="bg-[#ecf3f8] bg-[url('https://nppgadarpur.in/wp-content/uploads/2023/05/beth.png')] min-w-full justify-between content-center px-10 py-2 font-bold flex flex-row ">
+        <NavigationMenu className="bg-[#ecf3f8] bg-[url('https://nppgadarpur.in/wp-content/uploads/2023/05/beth.png')] min-w-full justify-between content-center px-10 py-1 font-bold flex flex-row ">
             <NavigationMenuList className="text-xl basis-1/2" >
                 <Link href="/" legacyBehavior passHref >
                     <NavigationMenuLink className="bg-[#e5e2db00] text-[#2b6cb0]  px-1 flex flex-row">

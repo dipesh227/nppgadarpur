@@ -3,29 +3,18 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem } from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-
-// export function NavbarDemo() {
-//     return (
-//         <div className="relative w-full flex items-center justify-center">
-//             <Navbar className="top-2" />
-//             <p className="text-black dark:text-white">
-//                 The Navbar will show on top of the page
-//             </p>
-//         </div>
-//     );
-// }
-
+import { FaAngleDown } from "react-icons/fa";
 export function Navbar({ className }: { className?: string }) {
     const [active, setActive] = useState<string | null>(null);
     return (
         <div
-            className={cn("fixed top-30 inset-x-0 max-w-2xl mx-auto z-50", className)}
+            className={cn("sticky top-0 inset-x-0 max-w-2xl mx-auto z-50", className)}
         >
-            <Menu setActive={setActive}>
+            <Menu setActive={setActive} >
                 <Link href={"/"}>
-                    <MenuItem setActive={setActive} active={active} item="Home" />
+                    <MenuItem setActive={setActive} active={active} item="मुख्य पृष्ठ" />
                 </Link>
-                <MenuItem setActive={setActive} active={active} item="Services">
+                <MenuItem setActive={setActive} active={active} item="परिचय "><FaAngleDown />
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="/web-dev">Web Development</HoveredLink>
                         <HoveredLink href="/interface-design">Interface Design</HoveredLink>
@@ -33,8 +22,55 @@ export function Navbar({ className }: { className?: string }) {
                         <HoveredLink href="/branding">Branding</HoveredLink>
                     </div>
                 </MenuItem>
-
-                <MenuItem setActive={setActive} active={active} item="Pricing">
+                <MenuItem setActive={setActive} active={active} item="कार्यालय">
+                    <div className="flex flex-col space-y-4 text-sm">
+                        <HoveredLink href="/hobby">Hobby</HoveredLink>
+                        <HoveredLink href="/individual">Search Engine Optimization</HoveredLink>
+                        <HoveredLink href="/team">Team</HoveredLink>
+                        <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+                    </div>
+                </MenuItem>
+                <MenuItem setActive={setActive} active={active} item="सूचना">
+                    <div className="flex flex-col space-y-4 text-sm">
+                        <HoveredLink href="/hobby">Hobby</HoveredLink>
+                        <HoveredLink href="/individual">Individual</HoveredLink>
+                        <HoveredLink href="/team">Team</HoveredLink>
+                        <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+                    </div>
+                </MenuItem>
+                <MenuItem setActive={setActive} active={active} item="सेवाये">
+                    <div className="flex flex-col space-y-4 text-sm">
+                        <HoveredLink href="/hobby">Hobby</HoveredLink>
+                        <HoveredLink href="/individual">Individual</HoveredLink>
+                        <HoveredLink href="/team">Team</HoveredLink>
+                        <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+                    </div>
+                </MenuItem>
+                <MenuItem setActive={setActive} active={active} item="गैलरी">
+                    <div className="flex flex-col space-y-4 text-sm">
+                        <HoveredLink href="/hobby">Hobby</HoveredLink>
+                        <HoveredLink href="/individual">Individual</HoveredLink>
+                        <HoveredLink href="/team">Team</HoveredLink>
+                        <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+                    </div>
+                </MenuItem>
+                <MenuItem setActive={setActive} active={active} item="डाउनलोड्स">
+                    <div className="flex flex-col space-y-4 text-sm">
+                        <HoveredLink href="/hobby">Hobby</HoveredLink>
+                        <HoveredLink href="/individual">Individual</HoveredLink>
+                        <HoveredLink href="/team">Team</HoveredLink>
+                        <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+                    </div>
+                </MenuItem>
+                <MenuItem setActive={setActive} active={active} item="सम्पर्क करें">
+                    <div className="flex flex-col space-y-4 text-sm">
+                        <HoveredLink href="/hobby">Hobby</HoveredLink>
+                        <HoveredLink href="/individual">Individual</HoveredLink>
+                        <HoveredLink href="/team">Team</HoveredLink>
+                        <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+                    </div>
+                </MenuItem>
+                <MenuItem setActive={setActive} active={active} item="साईट मैप">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="/hobby">Hobby</HoveredLink>
                         <HoveredLink href="/individual">Individual</HoveredLink>
