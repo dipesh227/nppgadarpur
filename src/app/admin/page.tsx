@@ -5,9 +5,9 @@ import { Sidebar } from "@/components/ui/sidebar";
 function admin() {
     return (
 
-        <>
-            Sidebar
-        </>
+
+        <Sidebar.bind />
+
     )
 }
 
