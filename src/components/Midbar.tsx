@@ -20,8 +20,8 @@ export default function Midbar() {
                     <NavigationMenuLink className="bg-[#e5e2db00] text-[#2b6cb0]  px-1 flex flex-row">
                         <Image
                             src={Logopic}
-                            width={150}
-                            height={150}
+                            width={120}
+                            height={120}
                             alt="Picture of the author"
                         />
                         <span className="flex flex-col justify-center mx-5">

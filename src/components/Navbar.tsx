@@ -8,7 +8,7 @@ export function Navbar({ className }: { className?: string }) {
     const [active, setActive] = useState<string | null>(null);
     return (
         <div
-            className={cn("sticky top-0 inset-x-0 max-w-2xl mx-auto z-50", className)}
+            className={cn("sticky top-0 inset-x-0 mx-auto z-50 text-2xl text- bg-[#e5e2db] text-black", className)}
         >
             <Menu setActive={setActive} >
                 <Link href={"/"}>
